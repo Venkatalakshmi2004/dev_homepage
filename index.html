@@ -1,0 +1,159 @@
+<html>
+<head>
+    <style>
+        
+*{
+    margin:0px;
+    padding:0px;
+}
+
+a{
+    color:white;
+}
+
+.class1{
+    color:white;
+    font-size:30px;
+    background-color: blue;
+    text-align: center;
+    border-radius: 10px;
+}
+.class1:hover{
+    background-color:purple;
+}
+
+#id1{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height:63vh;
+    background: url("foodie.jpg") no-repeat center center/cover;
+}
+ 
+
+
+
+.btn{
+    margin-top:15px;
+    border: 3px solid white;
+    border-radius:15px;
+    background-color:yellow;
+    font-size:40px;
+    font-weight: bold;
+    font-family: 'Ubuntu Mono', monospace;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+
+#top3{
+    color:red;
+    font-size:30px;
+    text-align: center;
+}
+#id2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin: 41px;
+}  
+#row4{
+    width: 29vw;
+    height: 360px;
+    border: 2px solid black;
+    background:url('ice.jpg') no-repeat center center/cover; 
+    
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+    border-radius: 15px;
+}
+#row5{
+    width: 29vw;
+    height: 360px;
+    border: 2px solid black;
+    background:url('biryani.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+    border-radius: 15px;
+}
+#row6{
+    width: 30vw;
+    height: 360px;
+    border: 2px solid black;
+    background:url('samosa.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+    border-radius: 15px;
+}
+.class4{
+    color:white;
+    background-color:deepskyblue;
+    font-style: italic;
+    font-size: 35px;
+    font-family: cursive;
+    text-align:center;
+}
+
+#id1::before{
+    content:'';
+
+    width: 100vw;
+    height:59vh;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-right:45px;
+    font-weight: bold;
+    z-index: -1;
+    opacity: 0.89;
+    border: 2px solid black;
+    border-bottom-left-radius: 100px;
+}
+
+
+    </style>
+    <!--link rel="stylesheet" href="style.css"-->     
+</head>
+<body>
+    <hr>
+    <table border="3px" width="100%" height="10%" >
+        <tr>
+            <td width="25%" class="class1"><a href="home.html">HOME</a></td>
+            <td width="25%"class="class1" ><a href="about.html">ABOUT US</a></td>
+            <td width="25%"class="class1" ><a href="menu.html">MENU</a></td>
+            <td width="25%"class="class1" ><a href="contact.html">CONTACT US</a></td>   
+        </tr>
+    </table>
+    <div id="id1">
+        <div class="btn">
+            Welcome to Online FoodCourt
+        </div>
+    </div>
+    <hr>
+    <h1 id="top3">Food Items</h1>
+    <div id="id2">
+        <div id="row4">
+            <form action="payment.html">
+            <button class="btn">ORDER NOW</button>
+        </div>
+        <div id="row5">
+            <form action="payment.html">
+            <button class="btn">ORDER NOW</button>
+        </div>
+        <div id="row6">
+            <form action="payment.html">
+            <button class="btn">ORDER NOW</button>
+        </div>
+    </div>
+<h1 class="class4">
+   <center>This Project is done by Sailaja Nagothi</center> 
+</h1>
+</body>
+</html>
